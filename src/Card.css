@@ -1,0 +1,21 @@
+.avatar{
+    width: 200px;
+    height: 200px;
+}
+.card-container{
+    background: lightblue;
+    width: 180px;
+    height:300px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px;
+    text-align: center;
+    display: inline-block;
+}
+h2{
+    font-size: 18px;
+}
+h4{
+    font-size: 15px;
+}
