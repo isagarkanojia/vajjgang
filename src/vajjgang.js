@@ -1,33 +1,37 @@
 export const vajjgang= [
     {
-        name:'Somnath Jhadhav',
+        name:'Somnath',
         alias: 'Vajj Boy'
     },
     {
-        name:'Shubham Choudhary',
+        name:'Shubham',
         alias: 'Kela'
     },
     {
-        name:'Sourav Deep',
+        name:'Sourav',
         alias: 'Deep'
     },
     {
-        name: 'Prince Sood',
+        name: 'Prince',
         alias: 'Chootad'
     },
     {
-        name:'Sahil Bhargav',
+        name:'Sahil',
         alias: 'Burger'
     },
     {
-        name:'Shubham Maini',
+        name:'Shubham',
         alias: 'Maini'
     },
     {
-        name:'Ajay Sharma',
+        name:'Ajay',
         alias: 'Vajje'
     },{
-        name: 'Simran Bawa',
-        alias: 'BawaCR'
+        name: 'Simran',
+        alias: 'Bawacr'
+    },{
+        name: 'Sagar',
+        alias: ':D'
     }
+
 ]
