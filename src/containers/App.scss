@@ -12,8 +12,5 @@ h1{
     color: pink;
     margin: 0px;
     font-family: 'hustler';
-    transition: all .8s ease;
-    &:hover{
-        transform: rotate(-5deg);
-    }
+    transform: rotate(-2deg);
 }
