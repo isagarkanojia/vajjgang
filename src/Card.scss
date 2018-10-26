@@ -1,0 +1,26 @@
+
+.card-container{
+    background: lightblue;
+    width: 180px;
+    height:300px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(black,.15);
+    text-align: center;
+    display: inline-block;
+    transition: all .9s ease;
+    &:hover{
+        transform: scale(1.1);
+    }
+    .avatar{
+        width: 200px;
+        height: 200px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 15px;
+    }
+}

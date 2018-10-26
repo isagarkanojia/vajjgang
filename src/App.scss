@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'hustler';
+    src: url('Hustlers.ttf');
+}
+
+
+.app-box{
+    text-align: center;
+}
+h1{
+    font-size: 64px;
+    color: pink;
+    margin: 0px;
+    font-family: 'hustler';
+    transition: all .8s ease;
+    &:hover{
+        transform: rotate(-5deg);
+    }
+}
