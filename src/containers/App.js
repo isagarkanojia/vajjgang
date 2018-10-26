@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import CardList from './CardList'
+import CardList from '../components/CardList'
 import { vajjgang } from './vajjgang';
-import SearchBox from './SearchBox';
+import SearchBox from '../components/SearchBox';
 import './App.scss'
-import Scroll from'./Scroll';
+import Scroll from'../components/Scroll';
 
 
 class App extends Component {
@@ -30,9 +30,12 @@ class App extends Component {
     }
 
     render() {
-        const filteredVajjGang = this.state.vajjgang.filter(vajj => {
-            return vajj.name.toLowerCase().includes(this.state.searchField.toLowerCase())
-                || vajj.alias.toLowerCase().includes(this.state.searchField.toLowerCase());
+
+        const {vajjgang,searchField}=this.state;
+
+        const filteredVajjGang = vajjgang.filter(vajj => {
+            return vajj.name.toLowerCase().includes(searchField.toLowerCase())
+                || vajj.alias.toLowerCase().includes(searchField.toLowerCase());
         });
         return (
             <div className="app-box">
