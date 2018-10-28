@@ -3,7 +3,8 @@ import CardList from '../components/CardList'
 import { vajjgang } from './vajjgang';
 import SearchBox from '../components/SearchBox';
 import './App.scss'
-import Scroll from'../components/Scroll';
+import Scroll from '../components/Scroll';
+import ErrroBoundary from "../components/ErrorBoundary";
 
 
 class App extends Component {
@@ -31,7 +32,7 @@ class App extends Component {
 
     render() {
 
-        const {vajjgang,searchField}=this.state;
+        const { vajjgang, searchField } = this.state;
 
         const filteredVajjGang = vajjgang.filter(vajj => {
             return vajj.name.toLowerCase().includes(searchField.toLowerCase())
@@ -42,7 +43,9 @@ class App extends Component {
                 <h1>Vajj Gang</h1>
                 <SearchBox searchChange={this.onSearchChange} />
                 <Scroll>
-                    <CardList vajjgang={filteredVajjGang} />
+                    <ErrroBoundary>
+                        <CardList vajjgang={filteredVajjGang} />
+                    </ErrroBoundary>
                 </Scroll>
             </div>
         );

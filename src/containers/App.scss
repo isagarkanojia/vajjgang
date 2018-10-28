@@ -5,7 +5,10 @@
 
 
 .app-box{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 h1{
     font-size: 64px;
